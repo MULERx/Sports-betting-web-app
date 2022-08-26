@@ -1,0 +1,186 @@
+/*  */
+.sport-country {
+  margin-bottom: 2px;
+}
+.sport-type-container {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 10px;
+  background: rgba(var(--wex-right-column-live));
+  color: rgb(var(--wex-white));
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.sport-type-right {
+  font-size: 18px;
+  padding-top: 4px;
+  padding-bottom: 0;
+  padding-right: 26px;
+}
+.sport-type-decore-left {
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.sport-type-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 12px 0px;
+  background-color: #212529;
+}
+.sport-type-text {
+  margin-top: 3px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.sport-country-container {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 10px;
+  background: rgba(var(--wex-right-column-live));
+  color: rgb(var(--wex-white));
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.sport-country-container:hover {
+  cursor: pointer;
+  background-color: #cb4335;
+  color: #fff;
+}
+.sport-country-list {
+  list-style-type: none;
+  margin: 0;
+  /* padding: 12; */
+  padding-left: 0px;
+}
+.sport-country-item {
+  margin-bottom: 2px;
+  background: #212529;
+  color: #fff;
+}
+.sport-country-item a {
+  text-decoration: none;
+}
+.sport-country-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sport-country-flag {
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 25px;
+  height: 16px;
+  margin-right: 10px;
+}
+.sport-country-flag-img {
+  display: inline-flex;
+  max-width: 100%;
+  max-height: 100%;
+}
+.sport-country-text {
+  margin-top: 3px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.sport-country-right {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  padding-top: 4px;
+  padding-bottom: 0;
+}
+/* ----country league list */
+.country-league-list {
+  list-style-type: none;
+  display: none;
+  margin: 0;
+  padding: 0 0 10px;
+  background: rgba(var(--wex-left-menu-champion-ship));
+}
+.country-league-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.country-league-container:hover {
+  cursor: pointer;
+  background: #cb4335;
+  color: #fff;
+}
+.country-league-container:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  right: 10px;
+  height: 1px;
+  background-color: #2d3541;
+}
+.country-league-left {
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.country-league-right {
+  width: 30px;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.country-league-text {
+  font-size: 14px;
+}
+/* .sport-country__item.active .country-league-list  */
+.country-league-list {
+  display: none;
+}

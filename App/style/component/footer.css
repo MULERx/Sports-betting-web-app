@@ -1,0 +1,113 @@
+/* main footer */
+@media (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+footer {
+  color: #fff;
+  position: fixed;
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer,
+footer .toggle {
+  color: #fff;
+  background: #27323e;
+  box-shadow: 0 -1px 1px 0 rgba(33, 40, 49, 0.25);
+}
+
+footer .toggle {
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 4px;
+  height: 26px;
+  width: 46px;
+  top: -26px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 99999999;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer .toggle__icon {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+  transform: translate(-50%, -70%);
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+footer .toggle:hover .toggle__icon {
+  -webkit-transform: translate(-50%, -70%) scale(1.1);
+  transform: translate(-50%, -70%) scale(1.1);
+}
+
+footer .toggle__icon {
+  -webkit-transform: translate(-50%, -70%) rotate(180deg);
+  transform: translate(-50%, -70%) rotate(180deg);
+}
+
+footer .bottom {
+  font-size: 12px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+.footer-l {
+  display: inline-block;
+  width: 35%;
+  padding-top: 14px;
+  padding-left: 18px;
+}
+.footer-c {
+  display: inline-block;
+  width: 25%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.footer-r {
+  display: inline-block;
+  width: 35%;
+  padding-top: 5px;
+}
+.footer-name {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 0.7px;
+}
+.footer-contact-item {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-contact-item a {
+  text-decoration: none;
+}
+.footer-social-link a {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10px;
+}
+.footer-social-link a:hover {
+  color: #aaa;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

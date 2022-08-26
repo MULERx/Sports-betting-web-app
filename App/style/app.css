@@ -1,0 +1,2241 @@
+/* medium 768 pixels to 991 pixels */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: #15171a; */
+  position: relative;
+  overflow-x: hidden;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.mobile .menu-button i{
+  color: #cb4335;
+  font-size: 38px;
+}
+
+
+/* search */
+.main-search {
+  margin-right: 30px;
+}
+.main-search input {
+  min-width: 100px !important;
+}
+.main-search .form-control {
+  padding-left: 1.375rem;
+}
+.main-search .form-control:focus {
+  box-shadow: none;
+}
+.main-search .form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  .main-search {
+    display: none;
+  }
+  .mobile-serach {
+    display: block;
+  }
+}
+/* mobile icon search  */
+.mobsearchbar{
+  color: #fff;
+  float: left;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: Arial;
+  transition: 0.5s;
+  position: relative;
+  padding:0 15px;
+  margin-right: 10px;
+}
+ 
+.mobsearchbar{
+  background: #cb4335;
+}
+ 
+.mobsearchbar:hover:not(.active){
+  background: #cb4335;
+}
+.togglesearch{
+  background: #E8E8E4;
+  position: absolute;
+  top: 45px;
+  right: -240%;
+  width: 355px;
+  height: 60px;
+  line-height: 35px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #cb4335;
+  display: none;
+}
+ 
+
+ 
+.togglesearch input[type="text"]{
+  width: 300px;
+  padding: 5px 10px;
+  margin-left: 0;
+  border: 1px solid #cb4335;
+  outline: none;
+}
+ 
+.togglesearch input[type="button"]{
+  width: 80px;
+  padding: 5px 0;
+  background: #cb4335;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #cb4335;
+  outline: none;
+  cursor: pointer;
+}
+@media only screen and (min-width:240px) and (max-width: 768px){
+  .navbar ul li{
+      float:none;
+      display:block;
+      text-align:center;
+      margin:0 auto;
+  }
+}
+/*  */
+.search-box {
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* background-color: #212529; */
+  /* height: 100%; */
+  height: 800px;
+  /* height: 100vh; */
+  width: 100%;
+  display: none;
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 102;
+    background: #212529;
+}
+.search-box form {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 5%;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.search-box form label {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+.search-box input[type="text"] {
+  width: 100%;
+  height: 50px;
+  padding: 5px 65px 5px 10px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  box-sizing: border-box;
+  background: transparent;
+  color: #fff;
+}
+.search-box input[type="text"]:focus {
+  outline: none;
+}
+.search-box button.submit-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 50px;
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+button.search-open {
+  float: right;
+  background-color: transparent;
+  border: none;
+  padding: 8px 20px;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.search-close {
+  font-size: 19px;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  left: 10px;
+  top: 10px;
+  background-color: transparent;
+  /* border-radius: 100%; */
+  /* border: 2px solid #fff; */
+  border: none;
+  height: 35px;
+  width: 35px;
+}
+
+@media (max-width: 767px) {
+  .search-box form {
+    width: 90%;
+    padding: 20px 10px;
+  }
+}
+/* top nav link */
+.top-btn {
+  display: flex;
+  gap: 8px;
+}
+
+/* login & register button */
+.btn-register a,
+.btn-register a:hover {
+  color: #fff;
+}
+.btn-login a:hover,
+.btn-login a:active {
+  color: #fff;
+}
+.btn-login a,
+.btn-register a {
+  text-decoration: none;
+}
+.btn-login,
+.btn-register {
+  text-transform: uppercase;
+  padding: 8px 24px;
+}
+
+@media (max-width: 748px) {
+  .btn-login,
+  .btn-register {
+    text-transform: uppercase;
+    padding: 7px 20px;
+  }
+  .main-search {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .btn-login,
+  .btn-register {
+    font-size: 13px;
+    padding: 6px 16px;
+  }
+  .logo-mobile img {
+    margin-left: 0px !important;
+  }
+}
+@media (max-width: 355px) {
+  .btn-login,
+  .btn-register {
+    font-size: 13px;
+    padding: 4px 10px;
+  }
+}
+
+/* user logedin */
+.user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  font-size: 14px;
+}
+.balance,.user__log-in {
+  display: flex;
+}
+.balance {
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  background: rgb(var(--wex-wet-asphlat));
+  z-index: 5;
+}
+.balance__button-container,
+ .balance .balance__info {
+  position: relative;
+  z-index: 25;
+  background: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+  
+  color: #fff;
+}
+
+.balance__info {
+  display: inline-flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 16px;
+  width: 100px;
+}
+.balance__info:hover {
+  cursor: pointer;
+}
+.balance__info-money-status {
+  color: #cb4335;
+}
+.balance__button-container {
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 30px;
+}
+@media (max-width:768px) {
+  .balance__button-container {
+    margin-right: 0px;
+  }
+  .balance__info{
+    width: 70px;
+  }
+}
+.balance__button-link {
+  background: #cb4335;
+  color: #212529;
+  text-transform: uppercase;
+  transition: .2s;
+}
+.balance__button-link {
+  padding: 10px 24px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #cb4335;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.account__dropdown {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+}
+.account__dropdown.active {
+  top: 53px;
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  display: block;
+}
+/* .account__dropdown.active .account__dropdown-wrapper {
+  position: fixed;
+  top: -100vh;
+  left: -100vw;
+  width: 200vw;
+  height: 200vh;
+  background: rgba(0,0,0,.4);
+} */
+.account__dropdown-content {
+  left: auto;
+  min-width: 205px;
+}
+.account__dropdown-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px 15px;
+  background: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+.account__dropdown-list {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.account__dropdown-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 43px;
+  color: #fff;
+  border-bottom: 1px solid black;
+}
+.account__dropdown-item-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 43px;
+  color: #fff;
+  border-bottom: 1px solid #282c34;
+}
+.desktop .account__dropdown-left {
+  text-transform: uppercase;
+}
+.account__dropdown-left {
+  text-transform: uppercase;
+}
+.account__dropdown-right-number--green {
+  color: #cb4335;
+}
+.account__dropdown-right-number {
+  font-weight: 700;
+}
+.account__dropdown-buttons {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.account__dropdown-button {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 7px;
+  border: none;
+  background: 0 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.account__dropdown-button:last-child {
+  margin-bottom: 0;
+}
+.account__dropdown-button--green {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #cb4335;
+  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+}
+
+.separator {
+  width: 1px;
+  background: #353e4c;
+}
+/* --profile */
+
+.settings__button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 30px;
+  background: 0 0;
+  border: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.settings__button:hover {
+  cursor: pointer;
+  background: #333;
+}
+.settings__button-svg {
+  width: 24px;
+  height: 24px;
+}
+.account-menu.active .account-menu__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 60;
+}
+.account-menu__list {
+  list-style-type: none;
+  position: absolute;
+  z-index: 61;
+  right: 0;
+  top: 124px;
+  -webkit-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  transform: translateX(110%);
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  background: #212529;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.account-menu.active .account-menu__list {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.account-menu__item:last-child .account-menu__link:before {
+  content: "";
+  display: none;
+}
+.account-menu__link {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  padding: 15px 50px;
+  color: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.account-menu__link:hover {
+  cursor: pointer;
+  background-color:#cb4335;
+  color: #fff;
+}
+.account-menu__link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 1px;
+  background-color: #aaa;
+}
+@media (max-width:768px) {
+  .user-main{
+    display: none;
+  }
+}
+
+/* second nav  link */
+
+.navbar {
+  padding: 0rem;
+  /* margin-bottom: 2rem; */
+}
+
+.dropdown .dropdown-menu {
+  border-radius: 0;
+  background-color: #212529;
+}
+.dropdown .dropdown-item {
+  color: #fff;
+  padding: 12px 15px 12px 19px;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: all 0.5s;
+}
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:active {
+  background-color: #cb4335;
+}
+.logo img {
+  width: 120px;
+}
+.logo-mobile img {
+  width: 46px;
+  margin-bottom: 15px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  border-radius: 0;
+}
+.navbar-nav .active {
+  background-color: #212529;
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 13px;
+  padding: 1.3em 0.9em;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: #212529;
+}
+@media (max-width: 794px) {
+  .nav-link {
+    padding: 1em 0.7em !important;
+  }
+}
+@media (max-width: 380px) {
+  .logo-mobile img {
+    width: 40px;
+  }
+  .logo-mobile {
+    padding-right: 0px !important;
+  }
+  .navbar-toggler {
+    padding-left: 0px;
+  }
+  .top-right-nav {
+    padding-left: 0px !important;
+  }
+  .btn-register {
+    font-size: 12px;
+    padding: 4px 9px;
+  }
+}
+/* navbar menu collaps  */
+.offcanvas-header {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .offcanvas-header {
+    display: block;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 70%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    transition: visibility 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    background-color: black;
+  }
+  /* .collaps-mob{
+    background-color: transparent !important;
+    width: 80% !important;
+  } */
+  .navbar-collapse-main{
+    background-color: black;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .logo-mobile img {
+    margin-left: 5px !important;
+  }
+}
+.btn-close {
+  font-size: 22px;
+  color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 8px !important;
+}
+.navbar-toggler {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  transform: translateY(-140%);
+  border: none;
+}
+
+
+/* mobile bottom navbar  */
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  will-change: transform;
+  transform: translateZ(0);
+
+  display: flex;
+
+  height: 50px;
+
+  box-shadow: 0 -2px 5px -2px #333;
+  background-color: #fff;
+}
+
+.mobile-bottom-nav__item {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 12px;
+   color: #212529;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-bottom-nav__item a{
+  text-decoration: none;
+  color: inherit;
+}
+.mobile-bottom-nav__item-content {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.mobile-bottom-nav__item--active {
+  color: red;
+}
+@media (min-width: 768px) {
+  .mobile-bottom-nav,#ligue_nav {
+    display: none;
+  }
+  #mob_bet_slip {
+    display: none;
+  }
+  .collaps-mob{
+    display: none;
+  }
+}
+/* MOBILE HOME SLIDER */
+@media (max-width: 768px) {
+  .slider {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  .slide_viewer {
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+
+  .slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .slide {
+    display: none;
+  }
+  .slide img {
+    display: none;
+  }
+}
+
+.slide:first-child {
+  display: block;
+}
+/*  */
+/* rule page */
+.sport-top__list-rules-body {
+  margin-top: 10px;
+  background: #212529;
+  color:#fff;
+}
+.rules-title {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  font-style: italic;
+}
+.rules-body {
+  padding: 10px;
+  max-height: calc(100vh - 171px);
+  overflow-y: scroll;
+}
+.rules-body h1 {
+  font-size: 16px;
+  color: #cb4335;
+  margin-bottom: 1em;
+  font-weight: 700;
+  font-style: italic;
+}
+.rules-body h2 {
+  font-size: 14px;
+  color: #fff;
+  margin: 2em 0 1em;
+  font-weight: 700;
+  font-style: italic;
+}
+.rules-body p {
+  font-size: 12px;
+  color: #fff;
+  margin: 1em 0;
+  line-height: 1.6em;
+}
+.rules-body table {
+  width: 100%;
+  border: 1px solid #cb4335;
+}
+.rules-body tr {
+  border: 1px solid #cb4335;
+}
+.rules-body .first-child {
+  width: 20%;
+  font-size: 14px;
+  text-align: start;
+  border: 2px solid #cb4335;
+  color: #d36356;
+}
+.rules-body .last-child {
+  width: 80%;
+  text-align: start;
+  border: 2px solid #d36356;
+  color: #fff;
+}
+.main-rules {
+  width: calc(100% - 330px);
+  margin: 0 auto;
+}
+@media (max-width:768px) {
+  .main-rules{
+    width: 100%;
+    
+  }
+  /* .rules-body{
+    max-height: 100%;
+  } */
+}
+/*  */
+/* betinfo */
+.main {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 10px 10px 25px;
+}
+.main {
+  max-height: -webkit-calc(100vh - 125px);
+  max-height: calc(100vh - 141px);
+}
+
+.main--center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.main--center {
+  padding-bottom: 6px;
+}
+.main--center-sign {
+  margin: 0 auto;
+  width: 60%;
+}
+.main__column {
+  padding-right: 2px;
+}
+.container-betHistory,
+.container-coupon,
+ .container-daily,
+.container-fixtures,
+ .container-promotions {
+  width: -webkit-calc(100% - 600px);
+  width: calc(100% - 600px);
+}
+.bet-details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.bet-details > div {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.bet-details > div:last-child {
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+.bet-details__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  height: 48px;
+  margin-bottom: 2px;
+  padding: 0 12px 0 20px;
+  border-bottom: 2px solid #cb4335;
+  background: #d36356;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.bet-details__header-left,
+ .bet-details__header-right {
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.bet-details__header-button {
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 25px;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: 0 0;
+}
+.bet-details__header-icon--share{
+  visibility: hidden;
+  margin-right: 20px;
+}
+.bet-details__header-button-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(img/icons/share.44ae555d51b5251d2953.svg) center center/100% 100%
+    no-repeat;
+}
+.bet-details__header-icon--close .bet-details__header-button-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url(close-decor.8af9b3065c57f30c303c.svg);
+}
+.bet-details__settings {
+  margin-bottom: 4px;
+  padding: 10px;
+  background: #353e4c;
+  color: #fff;
+  font-size: 12px;
+}
+.sport__bets-total-information {
+  background-color: #353e4c;
+}
+.sport__bets-total-information {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 10px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  background: #353e4d;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+}
+.sport__bets-total-information-cell:first-child {
+  margin-left: 0;
+}
+.bet-details__row {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.sport__bets-total-information-cell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-left: 40px;
+}
+.sport__bets-total-information-cell-top {
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.sport__bets-total-information-cell--amount .sport__bets-total-information-cell-bottom {
+  color: #cb4335;
+}
+.sport__bets-total-information-cell-bottom {
+  font-weight: 700;
+  color: #fff;
+}
+
+
+.bet-details__row--header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding-bottom: 0;
+}
+.bet-details__row-left,
+.bet-details__row-right {
+  text-transform: uppercase;
+}
+.bet-details__package-id {
+  width: 100%;
+}
+.bet-details__package-id-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.bet-details__package-id-input {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.auth__input {
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  background: #fff;
+  color: black;
+  font-size: 16px;
+}
+.auth__input {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.auth__input::placeholder {
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.auth__input:hover:not(.bankCodeInputinput) {
+  cursor: pointer;
+  border-color: #cb4335;
+}
+.auth__input:hover::placeholder {
+  color: #cb4335;
+}
+.bet-details__row:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+/* .bet-details__button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-border-radius: 2px;
+  background: #d36356;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.2s;
+} */
+.bet-details__button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  width: 90px;
+  border: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #d36356;
+  color:black;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.bet-details__button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.bet-details__button--check {
+  width: 80px;
+}
+/* ---betinfo MOBILE */
+.mobile .bet-details__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  height: 48px;
+  margin-bottom: 2px;
+  padding: 0 10px;
+  background-color: #d36356;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mobile .bet-details__header-left, .mobile .bet-details__header-right {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mobile .bet-details__header-button {
+  visibility: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 25px;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: 0 0;
+}
+.mobile .bet-details__header-button-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(img/icons/share.44ae555d51b5251d2953.svg) center center/100% 100% no-repeat;
+}
+.mobile .bet-details__settings {
+  margin-bottom: 4px;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #353e4c;
+}
+.mobile .bet-details__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid rgba(0,0,0,.3); */
+}
+.mobile .bet-details__package-id {
+  width: 100%;
+}
+.mobile .bet-details__package-id-top {
+  padding-bottom: 5px;
+}
+.mobile .bet-details__package-id-label {
+  color: #aaa;
+}
+.mobile .bet-details__package-id-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.mobile .auth__input {
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: 0 0;
+  color: #090a0d;
+  font-size: 16px;
+  background: rgb(201, 188, 188);
+}
+.mobile .bet-details__package-id-input {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+.mobile .bet-details__button--check {
+  width: 80px;
+}
+.mobile .bet-details__button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  width: 90px;
+  border: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #cb4335;
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width:768px) {
+  .mobile{
+    display: none;
+  }
+}
+/* deposit page */
+.main__column--center {
+  width: calc((100% - 315px) * 0.75);
+}
+.main__column--center {
+  width: 59.35%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* z-index: 10; */
+}
+.main__column--center {
+  margin: 0 10px;
+}
+.main__column--center {
+  max-height: calc(100vh - 160px);
+}
+.main-payment-header {
+  margin-bottom: 20px;
+  padding: 5px 0 20px;
+  border-bottom: 2px solid #cb4335;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.balance-content__list {
+  list-style-type: none;
+  margin: 0 0 5px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #cb4335;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.balance-content__item {
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 2px;
+  background: #c07971;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.balance-content__item:hover {
+  cursor: pointer;
+  background: #cb4335;
+}
+.balance-content__item.active {
+  background: #cb4335;
+  color: #090a0d;
+}
+.balance-content__item:last-child {
+  margin-right: 0;
+}
+.balance-content__container.active {
+  display: block;
+}
+.balance-content__container {
+  display: none;
+}
+.balance__operator-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.balance__operator-item {
+  margin-bottom: 10px;
+}
+.balance__operator-item:last-child {
+  margin-bottom: 0;
+}
+.balance__operator-item.active .balance__operator-drop-down {
+  display: block;
+}
+.balance__operator-drop-down-button {
+  position: relative;
+  height: 48px;
+  padding-left: 14px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #e70000;
+}
+
+.balance__operator-drop-down-button--play-master-bet {
+  background: #000;
+}
+.balance__operator-drop-down-button-image {
+  max-height: 100%;
+  max-width: 100%;
+}
+.balance__operator-drop-down-button
+  .balance__menu-button-decor--hellocash {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -5px;
+  opacity: 1;
+  margin-right: 0;
+  width: 7px !important;
+  height: 7px !important;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  color: #fff;
+}
+.balance__operator-drop-down-button:hover {
+  cursor: pointer;
+}
+/* .balance__operator-item.active .balance__operator-drop-down {
+  display: block;
+} */
+.balance__operator-drop-down {
+  /* display: none; */
+  padding: 15px 10px 10px;
+  -webkit-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+  background: #212529;
+  color: #fff;
+  font-size: 12px;
+}
+.auth__row--large-margin {
+  margin-bottom: 20px;
+}
+.auth__row {
+  margin-bottom: 15px;
+  color: #aaa;
+}
+.auth__row-my-account-title-all {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.balance-deposit__title {
+  margin-bottom: 10px;
+}
+.balance-deposit__manual-step-description, .balance-deposit__text,  .balance-deposit__title {
+  color: #fff;
+}
+.balance-deposit__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.balance-deposit__title-description {
+  margin-bottom: 20px;
+}
+.steps_main {
+  margin-top: 15px;
+}
+.auth__row {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.balance-deposit__manual-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.balance-deposit__manual-step {
+  margin-bottom: 7px;
+  color: #d36356;
+}
+.balance-deposit__manual-step, .desktop .balance-deposit__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.balance-deposit__manual-step-description {
+  margin-bottom: 20px;
+}
+@media (max-width:768px) {
+  .main__column--center {
+    width: 100%;
+    max-height: 100%;
+  }
+  .betinfo{
+    display: none;
+  }
+}
+/* profile Page */
+/* main */
+.container-user {
+  width: -webkit-calc(100% - 600px);
+  width: calc(100% - 600px);
+  overflow-y: auto;
+}
+.auth__header {
+  margin-bottom: 20px;
+  padding: 5px 0 20px;
+  border-bottom: 2px solid #cb4335;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 1400px){
+.auth__header {
+    padding: 0;
+}
+}
+.my-account {
+  padding: 15px;
+  background: #282c34;
+}
+.my-account__row--first {
+  padding-bottom: 30px;
+}
+.my-account__row {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.my-account__column--for-image {
+  width: 30%;
+  padding-top: 24px;
+}
+.my-account__my-image {
+  position: relative;
+  width: 100%;
+}
+.my-account__my-image:before {
+  content: "";
+  display: block;
+  padding-top: 66.6%;
+  background: #c8c8c8;
+}
+.my-account__my-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.my-account__my-image-img {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+.my-account__column--inputs {
+  width: 32%;
+}
+.my-account__column-title--change-margin[_ngcontent-c6] {
+  margin-bottom: 10px;
+}
+.auth__row {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  color: #aaa;
+}
+.my-account .my-account__column-title {
+  text-transform: uppercase;
+}
+.auth__row[_ngcontent-c6] {
+  margin-bottom: 18px;
+}
+.auth__input {
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  background: #aaa;
+  color: black;
+  font-size: 16px;
+  transition: .2s;
+  width: 100%;
+}
+ .my-account__column-title-form {
+  margin-bottom: 10px;
+}
+.auth__row-form:not(:first-child) {
+  overflow: visible;
+}
+.auth__button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 36px;
+  border: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #cb4335;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+.auth__button:hover{
+  background: #d36356;
+  color: black;
+}
+.my-account__column-title-mb{
+  margin-bottom: 10px;
+}
+.my-account__phone-information--big-top-padding {
+  padding-top: 34px;
+  max-width: fit-content;
+}
+.my-account__phone-information {
+  padding-top: 23px;
+  padding-right: 25px;
+  color: #aaa;
+}
+.cheangeMsg{
+  color: red;
+}
+.cheangeMsgsuccess{
+  color: green;
+}
+.user-id{
+  color: #fff;
+}
+@media (max-width:768px) {
+  .main-profile{
+    display: none;
+  }
+}
+/* mobile */
+.mobile .mob-main {
+  background-color: black;
+}
+.mobile .main--auth {
+  border-bottom: 4px solid #000;
+  background: black;
+  color: #fff;
+}
+.mobile .mob-main {
+  position: relative;
+  z-index: 0;
+  padding-top: 48px;
+  background: #090a0d;
+}
+.mobile .auth {
+  padding: 0 25px;
+  /* width: 100%;
+  height: 100%; */
+}
+.mobile .auth__header {
+  margin-bottom: 20px;
+  padding: 25px 0 20px;
+  border-bottom: 2px solid #cb4335;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.mobile .my-account__container {
+  margin-bottom: 20px;
+}
+.mobile .auth__row-my-account-title {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mobile .auth__row {
+  padding-bottom: 15px;
+  color: #aaa;
+}
+.mobile .auth__row--inputs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.mobile .my-account__container--personal-info input {
+  opacity: .5;
+}
+.mobile .auth__input {
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: 0 0;
+  color: black;
+  font-size: 16px;
+  background: #c8c8c8;
+}
+.mobile .my-account__container {
+  margin-bottom: 20px;
+}
+.mobile .auth__row--my-account-button-large-margin {
+  margin-bottom: 40px;
+}
+.mobile .auth__button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 36px;
+  border: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #cb4335;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+  -webkit-transition: background .2s;
+  -o-transition: background .2s;
+  transition: background .2s;
+}
+.mobile .auth__row-my-account-phone-number-description{
+  padding-bottom: 50px;
+}
+/* search */
+.search__dropdown-list {
+  list-style-type: none;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 5px;
+  z-index: 18;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 2pxsolidrgba(var(--wex-very-dark-bluewex-black));
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(var(--wex-left-menu-drop-down-item))),to(rgba(var(--wex-very-dark-bluewex-black))));
+  background: -o-linear-gradient(top,rgba(var(--wex-left-menu-drop-down-item)),rgba(var(--wex-very-dark-bluewex-black)));
+  background: linear-gradient(180deg,rgba(var(--wex-left-menu-drop-down-item)),rgba(var(--wex-very-dark-bluewex-black)));
+  color: rgb(var(--wex-white));
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotateX(-89deg);
+  transform: rotateX(-89deg);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.search__dropdown-item {
+  margin-bottom: 4px;
+  border-bottom: 1px solid rgba(var(--wex-white),.69);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+/*bet-slip */
+.bet-slip {
+  position: fixed;
+  right: -300px;
+  top: 145px;
+  bottom: 9px;
+  /* z-index: 30; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.bet-slip.active {
+  right: -300px;
+}
+.bet-slip.opened {
+  right: 0;
+}
+.bet-slip__fixed-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: flex-start;
+  height: 100%;
+}
+.bet-slip__container {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 300px;
+  min-height: 180px;
+  max-height: 100%;
+  border-left: 1px solid #cb4335;
+  border-bottom: 1px solid #cb4335;
+  background: #212529;
+  color: #fff;
+}
+.bet-slip__container {
+  max-height: 100%;
+}
+.bet-slip__container.empty:before {
+  content: "Bet slip is empty";
+  display: block;
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+.bet-slip__empty {
+  display: block;
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+.bet-slip__overflow-first {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.bet-slip__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  height: 40px;
+  padding: 0 20px 0 15px;
+  background: #cb4335;
+  color: inherit;
+  font-size: 16px;
+}
+.bet-slip__header-left {
+  
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.bet-slip__header-text {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.bet-slip__header-right {
+  
+  display: inline-flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.bet-slip__multi-clear-bets-button {
+  width: 25px;
+  height: 25px;
+  background: #cb4335;
+  margin-top: 5px;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+
+.bet-slip__multi-clear-bets-button:hover {
+  cursor: pointer;
+}
+/* slip */
+.bet-slip__body {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.bet-slip__multi-container, .desktop .bet-slip__single-container {
+  display: none;
+}
+.bet-slip__multi-bets--multi-max-height {
+  max-height: -webkit-calc(100vh - 580px);
+  max-height: calc(100vh - 580px);
+}
+.bet-slip__multi-bets {
+  padding-bottom: 5px;
+  max-height: -webkit-calc(83vh - 418px);
+  max-height: calc(83vh - 418px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.bet-slip__multi-bet:last-child {
+  margin-bottom: 0;
+}
+.bet-slip__multi-bet {
+  padding: 3px 14px;
+  margin-bottom: 2px;
+  background: #212529;
+  font-size: 12px;
+}
+.bet-slip__multi-container--multi .bet-slip__multi-bets--multi-max-height {
+  max-height: 250px;
+}
+.active.bet-slip__multi-container {
+  display: block;
+}
+.bet-slip__row--border-bottom {
+  padding-bottom: 0;
+}
+.bet-slip__row--align-stretch {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.bet-slip__row--font-bold {
+  font-weight: 700;
+}
+.bet-slip__row--border-bottom {
+  border-bottom: 1px #8b7e7b;
+}
+.bet-slip__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.bet-slip__row--font-bold {
+  font-weight: 700;
+}
+.bet-slip__row--align-stretch .bet-slip__bet-container-cell-right {
+  
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 15px;
+}
+.bet-slip__bet-container-cell-right {
+  color: #cb4335;
+}
+.bet-slip__clear-bets-button-decor {
+  
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+.main-close-svg {
+  
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: background-image .2s;
+  -o-transition: background-image .2s;
+  transition: background-image .2s;
+  color: #fff;
+  fill:#fff;
+}
+.bet-slip__championship-name {
+  color:rgb(179, 177, 177);
+  text-transform: uppercase;
+}
+.bet-slip__bet-odd {
+  color: #cb4335;
+  font-weight: 700;
+}
+.active.bet-slip__single-container {
+  display: block;
+}
+.bet-slip__multi-bets--single-height {
+  min-height: 85px;
+}
+.bet-slip__multi-bets--single-height {
+  max-height: -webkit-calc(100vh - 464px);
+  max-height: calc(100vh - 464px);
+}
+.bet-slip__row-for-warnings {
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+.new-bet-slip__input {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.new-bet-slip__button--minus {
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  background-image: url(/img/icons/minus.svg);
+}
+.new-bet-slip__button {
+  margin: 0;
+  padding: 0;
+  width: 26px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border: 0;
+  background-color: #cb4335;
+  background-size: 11px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -9999px;
+  overflow: hidden;
+  outline: 0;
+}
+.new-bet-slip__input .bet-slip__bet-input {
+  height: auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  border: 0;
+  outline: 0;
+  background-color: #303741;
+}
+.bet-slip__bet-input {
+  width: 100%;
+  height: 22px;
+  padding: 9px 6px;
+  border: 1px solid #8b7e7b;
+  background: 0 0;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+.new-bet-slip__button--plus {
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  background-image: url(/img/icons/plus.svg);
+}
+.new-bet-slip__button {
+  margin: 0;
+  padding: 0;
+  width: 26px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border: 0;
+  background-color: #cb4335;
+  background-size: 11px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -9999px;
+  overflow: hidden;
+  outline: 0;
+}
+.new-bet-slip__button:hover {
+  cursor: pointer;
+}
+.active.bet-slip__bet-container {
+  display: block;
+}
+.bet-slip__bet-container {
+  background-color: #2d3541;
+}
+.bet-slip__bet-container {
+  padding: 15px 14px;
+  background: #353e4d;
+  font-weight: 700;
+}
+.bet-slip__tool-tip-imitation-container {
+  height: 21px;
+}
+.bet-slip__row .auth__fastBet {
+  background: #cb4335;
+}
+.auth__fastBet{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 74%;
+  height: 29px;
+  border: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #476136;
+  color: rgb(var(--wex-white));
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+  margin: 0 auto;
+  cursor: pointer;
+  /* color: rgba(0, 0, 0, 0.356); */
+}

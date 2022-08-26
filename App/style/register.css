@@ -1,0 +1,6 @@
+.form-content .input-box input[type="date"]:valid {
+  border-color: #cac6c5;
+}
+.form-content .input-box input[type="date"]:focus {
+  border-color: #cb4335;
+}

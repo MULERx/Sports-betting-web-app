@@ -1,0 +1,809 @@
+
+/*  */
+@media (max-width: 768px) {
+  .main {
+    display: none;
+  }
+  main {
+    display: none;
+  }
+  .main--home {
+    display: none;
+  }
+}
+@media (min-width:768px) {
+  .mobile{
+    display: none;
+  }
+  #ligue_nav{
+    display: none;
+  }
+}
+.mobile .wrapper {
+  height: 100%;
+  min-height: 84vh;
+  position: relative;
+  overflow: hidden;
+  /* color: rgb(var(--wex-white)); */
+  background-color: #000;
+}
+.mobile .wrapper-main-and-footer {
+  height: 85vh;
+  min-height: 100%;
+  max-height: 83vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background: #090a0d;
+}
+.mobile .wrapper-main {
+  min-height: 100%;
+}
+.mobile .main-m {
+  background-color: #fff;
+}
+.mobile .main-m {
+  position: relative;
+  z-index: 0;
+  /* padding-top: 48px; */
+  background: #090a0d;
+}
+.mobile .banner-slider {
+  width: 100%;
+  position: relative;
+}
+.swiper-container[_ngcontent-c9] {
+  height: 100%;
+}
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+swiper > .swiper.s-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform,-webkit-transform;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* sport-nav */
+/* .mobile .sport__nav {
+  padding-top: 7px;
+} */
+.mobile .sport__nav-list {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 2px solid #cb4335;
+}
+.mobile .sport__nav-item {
+  width: 33.3%;
+  margin-right: 2px;
+}
+.mobile .sport__nav-item:last-child {
+  margin-right: 0;
+}
+.mobile .sport__nav-radio {
+  display: none;
+}
+
+.mobile .sport__nav-radio:checked + .sport__nav-label {
+  background: #cb4335;
+  color: #090a0d;
+}
+.mobile .sport-bar__text,
+.mobile .sport__nav-radio:checked + .sport__nav-label {
+  color: black;
+}
+.mobile .sport__nav-label {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #cb44354b;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* sport */
+.mobile .sport__bets-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 2px;
+}
+.sport__bets-item {
+  height: auto;
+  margin-bottom: 3px;
+  padding: 8px 10px 10px;
+  background: #212529;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1;
+}
+.mobile .sport__bets-item:last-child {
+  margin-bottom: 48px;
+}
+.mobile .sport__bets-info {
+  margin-bottom: 9px;
+}
+.mobile .sport__bets-info-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mobile .sport__bets-info-row--first {
+  margin-bottom: 5px;
+}
+.mobile .sport__bets-info-left,
+.mobile .sport__bets-info-right {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mobile .sport__bets-info-champion-league-icon {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 6px;
+}
+.sport__bets-info-champion-league-icon[_ngcontent-c9] {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.mobile .sports__bets-info-champion-league-icon-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.mobile .sport__bets-info-date-when {
+  position: relative;
+  padding-right: 5px;
+}
+.mobile .sport__bets-info-date-when:after {
+  content: ".";
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+}
+.mobile .sport__bets-info-date-time {
+  font-weight: 700;
+}
+.mobile .sport__bets-info-champion-league-text {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mobile .sport__bets-info-right--for-plus-icon {
+  padding-right: 4px;
+}
+.mobile .sports__bets-info-plus {
+  color: #fff;
+}
+.mobile .sports__bets-info-plus {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 27px;
+  height: 14px;
+  -webkit-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+  background: rgb(170, 147, 147);
+  font-size: 9px;
+  line-height: 1;
+  color: #090a0d;
+  font-weight: 700;
+}
+.mobile .sports__bets-info-plus:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 0;
+  border: 7px solid transparent;
+  border-left: 6px solid rgb(170, 147, 147);
+}
+.mobile .sport__bets-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.mobile .sport__bets-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: -webkit-calc(33.3% - 4px);
+  width: calc(33.3% - 4px);
+  padding: 9px 10px 8px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #3e434c;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+}
+.mobile .sport__bets-button {
+  background-color: black;
+}
+.mobile .sport__bets-button--active {
+  background: #cb4335;
+  color: #090a0d;
+}
+.mobile .sport__bets-button--active .sport__bets-button-right {
+  color: inherit;
+}
+.mobile .sport__bets-button-right {
+  color: #cb4335;
+  font-weight: 700;
+}
+/* header logedin */
+
+.mobile .mb-main-header__log-in,
+.mobile .mb-main-header__right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  
+}
+.mobile .mb-account {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 3.73vw;
+  color: #fff;
+}
+.mobile .mb-account-info {
+  margin-right: 3vw;
+}
+@media (max-width: 405px) {
+  .mobile .mb-account-info{
+    font-size: 12px;
+  }
+}
+.mobile .mb-account-info .mb-container {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.mobile .mb-account-info__deposit span:first-child,
+.mobile .mb-account-info__id span:first-child {
+  margin-right: 3px;
+}
+.mobile .mb-account__dropdown {
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.mobile .mb-account__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 20px;
+  display: none;
+}
+.mobile .mb-account__dropdown-wrapper {
+  position: absolute;
+  width: 100%;
+  height: -webkit-calc(100vh - 48px);
+  height: calc(100vh - 48px);
+  background: rgba(0,0,0,.4);
+}
+.mobile .mb-account__dropdown-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 3.73vw 15px;
+  background: #212529;
+  font-size: 16px;
+  font-weight: 300;
+}
+.mobile .mb-account__dropdown-list {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style-type: none;
+}
+.mobile .mb-account__dropdown-item {
+  border-bottom: 1px solid rgb(138, 126, 126);
+}
+.mobile .mb-account__dropdown-left {
+  text-transform: uppercase;
+}
+.mobile .mb-account-info__deposit-total, .mobile .mb-account__dropdown-right-number--green {
+  color: #cb4335;
+}
+.mobile .mb-account__dropdown-right-number {
+  font-weight: 700;
+}
+.mobile .mb-account__dropdown-item-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 43px;
+  border-bottom: 1px solid #282c34;
+}
+.mobile .mb-account__dropdown-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.mobile .mb-account__dropdown-button {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 7px;
+  border: none;
+  background: 0 0;
+  color: rgb(var(--wex-white));
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mobile .mb-account__dropdown-button:last-child {
+  margin-bottom: 0;
+}
+.mobile .mb-account__dropdown-button--green {
+  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+}
+.mobile .mb-account__dropdown-button--green {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #cb4335;
+}
+.mobile .mb-account__deposit-button {
+  color: black;
+}
+.mobile .mb-account__deposit-button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 22.66vw;
+  height: 9.6vw;
+  max-width: 85px;
+  max-height: 36px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #cb4335;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+} */
+.mobile .mb-more-menu-button--additional {
+  position: relative;
+}
+.mobile .mb-more-menu-button {
+  width: 5.3vw;
+  height: 9.6vw;
+  max-width: 20px;
+  max-height: 36px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.mobile .mb-account__dropdown.active {
+  display: block;
+}
+@media (min-width:768px) {
+  .mobile .mb-main-header__right{
+    display: none;
+  }
+}
+/* profile toggle */
+/* .mobile .active.menu--right {
+  right: 0;
+}
+.mobile .menu--right {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  left: auto;
+  right: -100vw;
+}
+.mobile .menu {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  z-index: 101;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.mobile .wrapper__black-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+}
+.mobile .wrapper__black-wrapper {
+  background-color: rgba(0,0,0,.9);
+}
+.mobile .main-menu {
+  background-color: #3e434c;
+}
+.mobile .main-menu--additional {
+  position: absolute;
+  right: 0;
+  width: 67%;
+}
+.mobile .main-menu--additional .nav__list {
+  border-top: 0;
+  font-size: 16px;
+}
+.mobile .main-menu__header {
+  background-color: #2b2e33;
+  -webkit-box-shadow: 0 2px 0 0 rgba(var(--wex-left-menu-header-mobile),.2);
+  box-shadow: 0 2px 0 0 #3e434c;
+}
+.mobile .main-menu__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 6px 0;
+  height: 48px;
+  background: #0f1216;
+  -webkit-box-shadow: 0 2px 0 0 rgb(0 0 0 / 40%);
+  box-shadow: 0 2px 0 0 rgb(0 0 0 / 40%);
+}
+.mobile .main-menu__header-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.mobile .separator {
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background: rgb(128, 121, 121);
+}
+.mobile .main-menu__button-close {
+  display: inline-block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 47px;
+  height: 100%;
+  border: none;
+  background: 0 0;
+}
+.mobile .main-menu__button-close-decor {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+.mobile .main-menu__button-close-decor:after, .mobile .main-menu__button-close-decor:before {
+  background-color: #fff;
+}
+.mobile .main-menu__button-close-decor:after, .mobile .main-menu__button-close-decor:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #f3f3f5;
+}
+.mobile .main-menu__button-close-decor:after {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.mobile .main-menu__nav {
+  max-height: -webkit-calc(100% - 48px);
+  max-height: calc(100% - 48px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.mobile .nav__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-top: 11px solid #2b2e33;
+  list-style-type: none;
+}
+.mobile .main-menu--additional .nav__item-text {
+  height: 43px;
+  padding-top: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 0;
+  color: #fff;
+  font-weight: 700;
+}
+.mobile .nav__item-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 40px;
+  padding-top: 19px;
+  padding-left: 15px;
+  padding-right: 12px;
+  border-bottom: 1px solid #15191f;
+  color: #62656b;
+  text-transform: uppercase;
+}
+.mobile .nav__item-text-right-decor {
+  border-left: 2px solid #f3f3f5;
+  border-bottom: 2px solid #f3f3f5;
+}
+.mobile .nav__item-text-right-decor {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-top: 2px;
+  border-left: 2px solid #62656b;
+  border-bottom: 2px solid #62656b;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s all;
+}
+.mobile .nav__item-list {
+  margin: 0;
+  padding: 0 0 0 15px;
+  border-bottom: 1px solid #15191f;
+  background: #3e434c;
+  list-style-type: none;
+}
+.mobile .main-menu--additional .nav__item-item {
+  color: #75777a;
+  font-weight: 400;
+}
+.mobile .nav__item-item:last-child {
+  border-bottom: none;
+}
+.mobile .nav__item-item {
+  border-bottom: 1px solid #2e343d;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mobile .nav__item-link {
+  display: block;
+  text-decoration: none;
+  font-weight: inherit;
+  color: inherit;
+}
+.mobile .main-menu--additional .nav__item-item-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.1;
+}
+.mobile .nav__item-item-text {
+  padding: 15px 0;
+  border-bottom: 1px solid #2e343d;
+}
+.mobile .nav__item-item-text-decor {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 11px;
+} */
+.profile_nav{
+  background-color: #282c34;
+}
+.btn-mob-close{
+  background: #282c34;
+}
+.mobile .menu__button-log-out {
+  height: 30px;
+  padding-top: 5px;
+  border: 1px solid #787b80;
+  background: 0 0;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.mobile .menu__button--log-out {
+  width: 100%;
+}
+.mobile .menu__button {
+  width: 220px;
+  height: 30px;
+  padding-top: 5px;
+  border: 1px solid #787b80;
+  background: 0 0;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-item{
+  border-bottom: 1px solid #12151a;
+}
+
