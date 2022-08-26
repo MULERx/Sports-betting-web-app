@@ -1,9 +1,9 @@
 <h1>Sports-betting-web-app</h1>
 This simple web app build by HTML,CSS,javascript,jquery,Bootstrap and procedural php.
-In this web app:
-      user can Register and login.
-      user can send balance to another user.
-      only registerd user can bet and see their bet histories.
+In this web app: <br>
+      user can Register and login,<br>
+      user can send balance to another user,<br>
+      only registerd user can bet and see their bet histories.<br>
 
 <h1>Basic requirements</h1>
 <ul>
