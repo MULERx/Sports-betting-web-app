@@ -34,25 +34,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
           </div>
         </div>
         
-        <!-- mobile search -->
-        <!-- <div class="mobile-serach d-md-none">
-          <button type="button" class="search-open">
-            <i class="bi bi-search" aria-hidden="true"></i>
-          </button>
-          <div class="search-box">
-            <button type="button" class="search-close">
-              <i class="bi bi-x-lg" aria-hidden="true"></i>
-            </button>
-            <form>
-              <label>
-                <input type="text" name="search" placeholder="Search..." />
-                <button type="submit" class="submit-btn">
-                  <i class="bi bi-search" aria-hidden="true"></i>
-                </button>
-              </label>
-            </form>
-          </div>
-        </div> -->
+     
     <div class="mobsearchbar d-md-none " >
         <i class="bi bi-search" aria-hidden="true"></i>
          <div class="togglesearch">

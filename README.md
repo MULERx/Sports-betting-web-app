@@ -1,4 +1,6 @@
 <h1>Sports-betting-web-app</h1>
+<img src="img/pic1.png" alt="site Image" />
+<img src="img/pic2.png" alt="site Image" />
 This simple web app build by HTML,CSS,javascript,jquery,Bootstrap and procedural php.<br>
 In this web app: <br>
       user can Register and login,<br>
