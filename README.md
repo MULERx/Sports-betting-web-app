@@ -1,5 +1,5 @@
 <h1>Sports-betting-web-app</h1>
-This simple web app build by HTML,CSS,javascript,jquery,Bootstrap and procedural php.
+This simple web app build by HTML,CSS,javascript,jquery,Bootstrap and procedural php.<br>
 In this web app: <br>
       user can Register and login,<br>
       user can send balance to another user,<br>
