@@ -1,6 +1,7 @@
 <h1> Sports betting web app </h1>
 <a href="https://www.buymeacoffee.com/mullerx" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 <h3>It is free of any license, and you can modify and use it</h3>
+<p>If you have any problem in this project you can comment or contact me</p>
 <img src="img/pic1.png" alt="site Image"/>
 <img src="img/pic2.png" alt="site Image"/>
 This simple web app build by HTML,CSS,javascript,jquery,Bootstrap and procedural php.<br>
