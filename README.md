@@ -12,7 +12,7 @@ In this web app: <br>
 
 <h1>Basic requirements</h1>
 <ul>
-<li>XAMP or WAMP</li>
+<li>XAMP or WAMP </li>
 <li>Chrome, Edge or Safari browsers</li>
 <li>Database Server</li>
 </ul>
