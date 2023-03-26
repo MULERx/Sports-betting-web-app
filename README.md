@@ -1,5 +1,4 @@
 <h1> Sports betting web-app </h1>
-<a href="https://www.buymeacoffee.com/mullerx" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 <h3>It is free of any license, and you can modify and use it</h3>
 <p>The back-end is written using procedural php but better you can use oophp. </p>
 <img src="img/pic1.png" alt="site Image"/>
